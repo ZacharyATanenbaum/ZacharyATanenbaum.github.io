@@ -1,1 +1,55 @@
-"Hello World"
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="./_app/immutable/assets/pages/index.svelte-229b91f5.css">
+	<link rel="modulepreload" href="./_app/immutable/start-cf6b3fe4.js">
+	<link rel="modulepreload" href="./_app/immutable/chunks/index-5f4e94e5.js">
+	<link rel="modulepreload" href="./_app/immutable/layout.svelte-e617bb89.js">
+	<link rel="modulepreload" href="./_app/immutable/pages/index.svelte-5a778048.js">
+	</head>
+	<body>
+		<div>
+
+
+
+
+
+		
+    <script>
+      window.BASE = (() => {
+        const normalised = (location.pathname.endsWith("/") ? location.pathname.substr(0, location.pathname.length -1) : location.pathname).substr(1);
+        const split = normalised.split('/');
+        const sliced = 0 ? split.slice(0, 0) : split;
+        const str = (sliced.length > 0 && sliced[0] !== "") ? "/" + sliced.join('/') : "";
+        return str;
+      })();
+    </script>
+
+    <script>
+      // ensure we save href as they are loaded, so they do not change on page navigation
+      document.querySelectorAll("link[href]").forEach((v) => v.href = v.href);
+    </script>
+<script type="module" data-sveltekit-hydrate="2eq20f">
+		import { start } from "./_app/immutable/start-cf6b3fe4.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="2eq20f"]').parentNode,
+			paths: {"base": window.BASE,"assets":""},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 2],
+				params: {},
+				routeId: ""
+			}
+		});
+	</script></div>
+	</body>
+</html>
